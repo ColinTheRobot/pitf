@@ -26,7 +26,17 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
+# Seeding
 gem 'smarter_csv'
+
+# API
+gem 'apipie-rails', git: 'git://github.com/Pajk/apipie-rails'
+gem 'grape'
+
+group :development, :test, :integration, :staging do
+  gem 'pry-rails', '~> 0.3.2'
+end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

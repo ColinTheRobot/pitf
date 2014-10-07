@@ -1,0 +1,3 @@
+class AtrocitiesController < ApplicationController
+
+end
