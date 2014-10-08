@@ -1,4 +1,4 @@
-module API
+# module API
   module V1
     class Atrocities < Grape::API
       version 'v1'
@@ -8,8 +8,9 @@ module API
         desc "Returns first of World Wide Atrocities"
         get do
           Atrocity.first
+
         end
       end
     end
   end
-end
+# end
